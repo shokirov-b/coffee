@@ -607,10 +607,48 @@ a {
     fill: #000;
   }
   .header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 32px;
   }
   .header__list {
     display: none;
+  }
+  .checkbox {
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+            clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  .checkbox:checked + .header__list {
+    display: block;
+    position: absolute;
+    height: 434px;
+    top: 70px;
+    z-index: 2;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #5d5f61b8;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .checkbox:checked + .header__list .header__item {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .checkbox:checked + .header__list .header__link {
+    color: #000;
+    text-align: center;
+    margin-right: 0;
   }
   .about__wrapper {
     background-image: url(../img/about.jpg);
