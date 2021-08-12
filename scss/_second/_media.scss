@@ -1,0 +1,244 @@
+@media only screen and (max-width:768px){
+    .container{
+        margin: 0 auto;
+        width: 689px;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .about{
+        &__wrapper{
+            background-image: url(../img/about.jpg);
+            background-position: center top ;
+            height: 400px;
+            margin: 45px 0 168px 0;
+            border-radius: 10px;
+        }
+        &__title__wrapper{
+            padding: 118px 0 118px 58px;
+        }
+        &__title{
+            font-family: 'Fraunces';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 32px;
+            line-height: 40px;
+            color: #FEFCF7;
+        }
+        &__text{
+            width: 398px;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 15px;
+            line-height: 25px;
+            color: #FEFCF7;
+            margin-top: 24px;
+        }
+    }
+    .commit{
+        &__wrapper{
+            display: flex;
+            width: 689px;
+            margin: 0 auto;
+        }
+        &__img{
+            width: 281px;
+            height: 470px;
+            border-radius: 8px;
+        }
+        &__title{
+            font-family: 'Fraunces';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 32px;
+            line-height: 48px;
+            color: #333D4B;
+            margin: 15px 0 30px 0;
+        }
+        &__right{
+            width: 339px;
+            margin-right: 10px;
+            margin-left: 50px;
+        }
+    }
+    .commit__text{
+        width: 339px;
+        height: 350px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        color: #333D4B;
+        opacity: 0.8;
+    }
+    .man{
+        width: 281px;
+        height: 470px;
+    }
+    .quality{
+        margin-top: 256px;
+        &__wrapper{
+            width: 668px;
+            height: 474px;
+            display: flex;
+            background: #2C343E;
+            border-radius: 10px;
+            position: relative;
+            padding: 224px 0 67px 54px;
+        }
+        &__left{
+            width: 560px;
+        }
+        &__title{
+            font-family: 'Fraunces';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 32px;
+            line-height: 48px;
+            color: #FEFCF7;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+        &__text{
+            width: 560px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 25px;
+            color: #FEFCF7;
+            opacity: 0.8;
+            text-align: center;
+        }
+        &__img{
+            position: absolute;
+            border-radius: 10px;
+            right: 48px;
+            top: -150px;
+            // bottom: 88px;
+        }
+    }
+    .countries{
+        &__wrapper{
+           width: 668px;
+           margin: 0 auto;
+        }
+        &__title{
+            font-style: normal;
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 32px;
+            color: #83888F;
+            margin: 168px 0 72px 0;
+        }
+        &__subtitle{
+            font-style: normal;
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 36px;
+            color: #333D4B;
+            margin-bottom: 24px;
+        }
+        &__subtext{
+            width: 285px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 30px;
+            color: #333D4B;
+        }
+        &__list{
+            display: flex;
+            justify-content: space-between;
+        }
+        &__item{
+            margin-right: 108px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+        &__img-united{
+            margin-bottom: 46px;
+        }
+        &__img-canada{
+            margin-bottom: 45px;
+        }
+        &__img-aus{
+            margin-bottom: 48px;
+        }
+    }
+    .footer{
+        &__wrapper{
+            width: 668px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 270px;
+            background-color: #2C343E;
+            position: relative;
+            margin-top: 200px;
+        }
+        &__logo{
+            width: 236px;
+            height: 26px;
+            margin: 48px 108px 47px 85px;
+        }
+        &__menu{
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+        }
+        &__link{
+            color: #83888F;
+            text-decoration: none;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 15px;
+            margin-right: 33px;
+            &:hover{
+                color: #FEFCF7;
+            }
+        }
+        &__img{
+            position: absolute;
+            right: 283px;
+            bottom: 54px;
+        }
+        &__img_link{
+            margin-right: 24px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+        &__img_right{
+            margin-right: 24px;
+            &:nth-child(3){
+                margin-right: 0;
+            }
+        }
+          .icon{
+              width: 24px;
+              height: 24px;
+              fill: #FEFCF7;
+              &:hover{
+                  fill:  #FDD6BA;
+              }
+          }
+          .twitter{
+              width: 24px;
+              height: 19.5px;
+              fill: #FEFCF7;
+              &:hover{
+                fill:  #FDD6BA;
+            }
+          }
+          .instagram{
+              width: 24px;
+              height: 24px;
+              fill: #FEFCF7;
+              &:hover{
+                fill:  #FDD6BA;
+            }
+          }
+        }
+  
+}

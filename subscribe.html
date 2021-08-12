@@ -8,66 +8,86 @@
     <title>About us</title>
     <link rel="stylesheet" href="./css/stylesheet.css">
     <link rel="stylesheet" href="./css/subscribe.css">
+    <!-- <link rel="stylesheet" href="./css/subscribe.css"> -->
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="container">
-            <nav class="nav">
-                <a class="logotip" href="./index.html"><img class="image_coffee" src="./img/logo.svg" alt=""></a>
-                <ul class="navbar">
-                    <li class="navbar_item"><a class="navbar_link" href="./index.html">HOME</a></li>
-                    <li class="navbar_item"><a class="navbar_link" href="./second.html">ABOUT US</a></li>
-                    <li class="navbar_item"><a class="navbar_link" href="./subscribe.html">CREATE YOUR PLAN</a></li>
+            <nav class="header__nav">
+                <a class="header__logotip" href="./index.html"><img class="header__logo" src="./img/logo.svg"
+                        alt=""></a>
+                <div class="header__svg" style="display: none">
+                    <svg>
+                        <symbol aria-hidden="true" data-prefix="fas" data-icon="bars" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512" id="bars">
+                            <path
+                                d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                            </path>
+                        </symbol>
+                    </svg>
+                </div>
+                <svg class="menu">
+                    <use xlink:href="#bars"></use>
+                </svg>
+                <ul class="header__list">
+                    <li class="header__item"><a class="header__link" href="#">HOME</a></li>
+                    <li class="header__item"><a class="header__link" href="./second.html">ABOUT US</a></li>
+                    <li class="header__item"><a class="header__link" href="./subscribe.html">CREATE YOUR PLAN</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section class="one">
+        <section class="plan">
             <div class="container">
-                <div class="wraper">
-                    <h1 class="title">Create a plan</h1>
-                    <p class="text">Build a subscription plan that best fits your needs. We offer an <br> assortment of
-                        the best artisan coffees from around the globe <br> delivered fresh to your door.</p>
+                <picture>     
+                    <source media="(max-width:375px)" src="">              
+                    <source media="(max-width:764px)" srcset="./img/laptop.png 1x, ./img/laptop@2x.png 2x,">
+                    <img class="plan__image" src="./img/bg-plan.png" srcset="./img/bg-plan.png 1x, img/bg-plan@2x.png 2x" alt="plan">
+                </picture>
+                <div class="plan__wrapper">
+                    <h1 class="plan__title">Create a plan</h1>
+                    <p class="plan__text">Build a subscription plan that best fits your needs. We offer an assortment of
+                        the best artisan coffees from around the globe delivered fresh to your door.</p>
                 </div>
             </div>
         </section>
-        <section class="two">
-            <div class="container">
-                <div class="main__wrapper">
-                    <div class="works">
+        <section class="number">
+            <div class="container none">
+                <div class="number__wrapper">
+                    <div class="number__intro_wrapper">
                         <div class="line">
                             <span class="circle"></span>
                             <span class="circle"></span>
                             <span class="circle"></span>
                         </div>
-                        <ul class="work__list">
-                            <li class="work__item">
-                                <h2 class="number">01</h2>
-                                <h3 class="tagline_work">Pick your <br>coffee</h3>
-                                <p class="text_work">Select from our evolving range of artisan <br> coffees. Our beans
+                        <ul class="number__list">
+                            <li class="number__item">
+                                <h2 class="number__title">01</h2>
+                                <h3 class="number__subtitle">Pick your coffee</h3>
+                                <p class="number__text">Select from our evolving range of artisan coffees. Our beans
                                     are
-                                    ethically sourced <br> and we pay fair prices for them. There are <br> new coffees
+                                    ethically sourced and we pay fair prices for them. There are new coffees
                                     in
-                                    all profiles every month <br> for you to try out.</p>
+                                    all profiles every month for you to try out.</p>
                             </li>
-                            <li class="work__item">
-                                <h2 class="number">02</h2>
-                                <h3 class="tagline_work">Choose the <br> frequency</h3>
-                                <p class="text_work">Customize your order frequency, <br> quantity, even your roast
+                            <li class="number__item">
+                                <h2 class="number__title">02</h2>
+                                <h3 class="number__subtitle">Choose the frequency</h3>
+                                <p class="number__text">Customize your order frequency, quantity, even your roast
                                     style
-                                    and grind <br> type. Pause, skip or cancel your <br> subscription with no commitment
-                                    <br> through our online portal.
+                                    and grind type. Pause, skip or cancel your subscription with no commitment
+                                    through our online portal.
                                 </p>
                             </li>
-                            <li class="work__item">
-                                <h2 class="number">03</h2>
-                                <h3 class="tagline_work">Receive and <br> enjoy!</h3>
-                                <p class="text_work">We ship your package within 48 hours, <br> freshly roasted. Sit
+                            <li class="number__item">
+                                <h2 class="number__title">03</h2>
+                                <h3 class="number__subtitle">Receive and enjoy!</h3>
+                                <p class="number__text">We ship your package within 48 hours, freshly roasted. Sit
                                     back
-                                    and enjoy <br> award-winning world-class coffees <br> curated to provide a distinct
-                                    tasting <br> experience.</p>
+                                    and enjoy award-winning world-class coffees curated to provide a distinct
+                                    tasting experience.</p>
                             </li>
                         </ul>
                     </div>
@@ -75,158 +95,209 @@
 
             </div>
         </section>
-        <section class="three">
+        <section class="about">
             <div class="container">
-                <div class="about_coffe">
-                    <ul class="choose_coffee">
-                        <li class="choose_item">
-                            <a class="tdn" href="#"><span class="mrg_right blue">01</span>Preferences</a>
+                <div class="about__wrapper">
+                    <ul class="about__menu">
+                        <li class="about__item">
+                            <a class="about__tdn " href="#"><span class="about__number light">01</span>Preferences</a>
                         </li>
-                        <hr class="line_wdth">
-                        <li class="choose_item">
-                            <a class="tdn" href="#"><span class="mrg_right">02</span>Bean Type</a>
+                        <hr class="about__line">
+                        <li class="about__item">
+                            <a class="about__tdn" href="#"><span class="about__number">02</span>Bean Type</a>
                         </li>
-                        <hr class="line_wdth">
-                        <li class="choose_item">
-                            <a class="tdn" href="#"><span class="mrg_right">03</span>Quantity</a>
+                        <hr class="about__line">
+                        <li class="about__item">
+                            <a class="about__tdn" href="#"><span class="about__number">03</span>Quantity</a>
                         </li>
-                        <hr class="line_wdth">
-                        <li class="choose_item">
-                            <a class="tdn" href="#"><span class="mrg_right">04</span>Grind Option</a>
+                        <hr class="about__line">
+                        <li class="about__item">
+                            <a class="about__tdn" href="#"><span class="about__number">04</span>Grind Option</a>
                         </li>
-                        <hr class="line_wdth">
-                        <li class="choose_item">
-                            <a class="tdn dark" href="#"><span class="mrg_right light">05</span>Deliveries</a>
+                        <hr class="about__line">
+                        <li class="about__item">
+                            <a class="about__tdn dark" href="#"><span class="about__number opacity">05</span>Deliveries</a>
+                        </li>
                     </ul>
-                    <ul class="info_list">
-                        <li class="info_list_item">
-                            <h3 class="title_info">How do you drink your coffee?</h3>
-                            <img class="up_way" src="./img/up.svg" alt="up_blue">
-                            <ul class="intro_info_list">
-                                <li class="intro_info_item hover">
-                                    <h4 class="drink_title">Capsule</h4>
-                                    <p class="drink_text">Compatible with <br> Nespresso systems and <br> similar brewers</p>
+                    <ul class="about_box__list">
+                        <li class="about_box__item">
+                            <h3 class="about_box__title">How do you drink your coffee?</h3>
+                            <img class="about_box__arrow-up" src="./img/up.svg" alt="up_blue">
+                            <ul class="about_intro_box__list">
+                                <li class="about_intro_box__item">
+                                    <h4 class="about_intro_box__title ">Capsule</h4>
+                                    <p class="about_intro_box__text ">Compatible with Nespresso systems and similar
+                                        brewers</p>
                                 </li>
-                                <li class="intro_info_item dark_green">
-                                    <h4 class="drink_title white">Filter</h4>
-                                    <p class="drink_text white">For pour over or drip <br> methods like Aeropress, <br> Chemex, and V60
+                                <li class="about_intro_box__item green">
+                                    <h4 class="about_intro_box__title white">Filter</h4>
+                                    <p class="about_intro_box__text white">For pour over or drip methods like Aeropress,
+                                        Chemex, and V60
                                     </p>
                                 </li>
-                                <li class="intro_info_item hover">
-                                    <h4 class="drink_title">Espresso</h4>
-                                    <p class="drink_text">Dense and finely ground <br> beans for an intense, <br> flavorful
+                                <li class="about_intro_box__item">
+                                    <h4 class="about_intro_box__title">Espresso</h4>
+                                    <p class="about_intro_box__text">Dense and finely ground beans for an intense, flavorful
                                         experience
                                     </p>
                                 </li>
                             </ul>
                         </li>
-                        <li class="info_list_item mrg_top">
-                            <h3 class="title_info">What type of coffee?</h3>
-                            <img class="up_way" src="./img/up.svg" alt="up_blue">
-                            <ul class="intro_info_list">
-                                <li class="intro_info_item hover">
-                                    <h4 class="drink_title pdng_none">Single Origin</h4>
-                                    <p class="drink_text">Distinct, high quality <br> coffee from a specific <br> family-owned farm</p>
+                        <li class="about_box__item">
+                            <h3 class="about_box__title">What type of coffee?</h3>
+                            <img class="about_box__arrow-up" src="./img/up.svg" alt="up_blue">
+                            <ul class="about_intro_box__list">
+                                <li class="about_intro_box__item">
+                                    <h4 class="about_intro_box__title pdng_none">Single Origin</h4>
+                                    <p class="about_intro_box__text">Distinct, high quality coffee from a specific
+                                        family-owned farm</p>
                                 </li>
-                                <li class="intro_info_item dark_green">
-                                    <h4 class="drink_title white">Decaf</h4>
-                                    <p class="drink_text white">Just like regular coffee, <br> except the caffeine has <br> been removed
+                                <li class="about_intro_box__item green">
+                                    <h4 class="about_intro_box__title white">Decaf</h4>
+                                    <p class="about_intro_box__text white">Just like regular coffee, except the caffeine
+                                        has
+                                        been removed
                                     </p>
                                 </li>
-                                <li class="intro_info_item hover">
-                                    <h4 class="drink_title">Blended</h4>
-                                    <p class="drink_text">Combination of two or <br> three dark roasted <br> beans of organic coffees
-                                    </p>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="info_list_item mrg_top">
-                            <h3 class="title_info">How much would you like?</h3>
-                            <img class="up_way" src="./img/up.svg" alt="up_blue">
-                            <ul class="intro_info_list">
-                                <li class="intro_info_item dark_green">
-                                    <h4 class="drink_title pdng_none white">250g</h4>
-                                    <p class="drink_text white">Perfect for the solo <br> drinker. Yields about 12 <br> delicious cups.</p>
-                                </li>
-                                <li class="intro_info_item  hover">
-                                    <h4 class="drink_title">500g</h4>
-                                    <p class="drink_text">Perfect option for a <br> couple. Yields about 40 <br> delectable cups.
-                                    </p>
-                                </li>
-                                <li class="intro_info_item hover">
-                                    <h4 class="drink_title">1000g</h4>
-                                    <p class="drink_text">Perfect for offices and <br> events. Yields about 90 <br> delightful cups.
+                                <li class="about_intro_box__item">
+                                    <h4 class="about_intro_box__title">Blended</h4>
+                                    <p class="about_intro_box__text">Combination of two or three dark roasted beans of
+                                        organic coffees
                                     </p>
                                 </li>
                             </ul>
                         </li>
-                        <li class="info_list_item mrg_top">
-                            <h3 class="title_info">Want us to grind them?</h3>
-                            <img class="up_way" src="./img/up.svg" alt="up_blue">
-                            <ul class="intro_info_list">
-                               
-                                <li class="intro_info_item  hover">
-                                    <h4 class="drink_title">Wholebean</h4>
-                                    <p class="drink_text">Best choice if you <br> cherish the full sensory <br> experience
+                        <li class="about_box__item mrg_top">
+                            <h3 class="about_box__title">How much would you like?</h3>
+                            <img class="about_box__arrow-up" src="./img/up.svg" alt="up_blue">
+                            <ul class="about_intro_box__list">
+                                <li class="about_intro_box__item green">
+                                    <h4 class="about_intro_box__title white">250g</h4>
+                                    <p class="about_intro_box__text white">Perfect for the solo drinker. Yields about 12 delicious cups.</p>
+                                </li>
+                                <li class="about_intro_box__item">
+                                    <h4 class="about_intro_box__title">500g</h4>
+                                    <p class="about_intro_box__text">Perfect option for a  couple. Yields about 40 delectable cups.
                                     </p>
                                 </li>
-                                <li class="intro_info_item hover">
-                                    <h4 class="drink_title">Filter</h4>
-                                    <p class="drink_text">For drip or pour-over <br> coffee methods such as <br> V60 or Aeropress
+                                <li class="about_intro_box__item">
+                                    <h4 class="about_intro_box__title">1000g</h4>
+                                    <p class="about_intro_box__text">Perfect for offices and  events. Yields about 90
+                                        delightful cups.
                                     </p>
-                                </li> 
-                                <li class="intro_info_item dark_green">
-                                    <h4 class="drink_title pdng_none white">Cafetiére</h4>
-                                    <p class="drink_text white">Course ground beans <br> specially suited for <br> french press coffee</p>
                                 </li>
                             </ul>
                         </li>
-                        <li class="info_list_item mrg_top">
-                            <h3 class="title_info">How often should we deliver?</h3>
-                            <img class="up_way" src="./img/up.svg" alt="up_blue">
-                            <ul class="intro_info_list">
-                               <li class="intro_info_item dark_green">
-                                    <h4 class="drink_title pdng_none white">Every week</h4>
-                                    <p class="drink_text white">$7.20 per shipment. <br> Includes free first-class <br> shipping.</p>
-                                </li>
-                                <li class="intro_info_item  hover">
-                                    <h4 class="drink_title none">Every 2 weeks</h4>
-                                    <p class="drink_text">$9.60 per shipment. <br> Includes free priority <br> shipping.
+                        <li class="about_box__item">
+                            <h3 class="about_box__title">Want us to grind them?</h3>
+                            <img class="about_box__arrow-up" src="./img/up.svg" alt="up_blue">
+                            <ul class="about_intro_box__list">
+
+                                <li class="about_intro_box__item">
+                                    <h4 class="about_intro_box__title">Wholebean</h4>
+                                    <p class="about_intro_box__text">Best choice if you cherish the full sensory
+                                        experience
                                     </p>
                                 </li>
-                                <li class="intro_info_item hover">
-                                    <h4 class="drink_title pdng_none">Every month</h4>
-                                    <p class="drink_text">$12.00 per shipment. <br>  Includes free priority <br>
+                                <li class="about_intro_box__item">
+                                    <h4 class="about_intro_box__title">Filter</h4>
+                                    <p class="about_intro_box__text">For drip or pour-over coffee methods such as V60 or
+                                        Aeropress
+                                    </p>
+                                </li>
+                                <li class="about_intro_box__item green">
+                                    <h4 class="about_intro_box__title pdng_none white">Cafetiére</h4>
+                                    <p class="about_intro_box__text white">Course ground beans specially suited for
+                                        french press coffee</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="about_box__item">
+                            <h3 class="about_box__title">How often should we deliver?</h3>
+                            <img class="about_box__arrow-up" src="./img/up.svg" alt="up_blue">
+                            <ul class="about_intro_box__list">
+                                <li class="about_intro_box__item green">
+                                    <h4 class="about_intro_box__title pdng_none white">Every week</h4>
+                                    <p class="about_intro_box__text white">$7.20 per shipment. Includes free first-class
+                                        shipping.</p>
+                                </li>
+                                <li class="about_intro_box__item">
+                                    <h4 class="about_intro_box__title none">Every 2 weeks</h4>
+                                    <p class="about_intro_box__text">$9.60 per shipment. Includes free priority shipping.
+                                    </p>
+                                </li>
+                                <li class="about_intro_box__item">
+                                    <h4 class="about_intro_box__title">Every month</h4>
+                                    <p class="about_intro_box__text">$12.00 per shipment. Includes free priority
                                         shipping.
                                     </p>
-                                </li> 
+                                </li>
                             </ul>
                         </li>
-                        <li class="info_list_item mrg_top dark_blue">
-                            <p class="suptext">Order Summary</p>
-                            <h2 class="title_summary">“I drink my coffee as <span class="clr_blue">Filter,</span> with a <span class="clr_blue">Decaf</span>  type of <br> bean. <span class="clr_blue">250g</span>  ground ala <span class="clr_blue">Cafetiére</span>,  sent to me <br> <span class="clr_blue">Every Week</span> .”</h2>
+                        <li class="order__item">
+                            <p class="order__text">Order Summary</p>
+                            <h2 class="order__title">“I drink my coffee as <span class="blue">Filter,</span> with a
+                                <span class="blue">Decaf</span> type of bean. <span
+                                    class="blue">250g</span> ground ala <span class="blue">Cafetiére</span>,
+                                sent to me <span class="blue">Every Week</span> .”
+                            </h2>
                         </li>
-                        <button  class="btn">Create my plan!</button>
+                        <a class="btn">Create my plan!</a>
                     </ul>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <div class="footer_wrapper">
-                <a class="logo_footer" href="#"><img class="logo" src="./img/footerlogo.svg" alt=""></a>
+            <div class="footer__wrapper">
+                <a class="footer__logo" href="#"><img class="logo" src="./img/footerlogo.svg" alt="footer logo" width="236" height="26"></a>
                 <nav>
-                    <ul class="footer_nav">
-                        <li class="footer_item"><a class="footer_link" href="#">HOME</a></li>
-                        <li class="footer_item"><a class="footer_link" href="#">ABOUT US</a></li>
-                        <li class="footer_item"><a class="footer_link" href="#">CREATE YOUR PLAN</a></li>
+                    <ul class="footer__menu">
+                        <li class="footer__item"><a class="footer__link" href="#">HOME</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">ABOUT US</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">CREATE YOUR PLAN</a></li>
                     </ul>
                 </nav>
-                <div class="images">
-                    <a href="#"><img class="right" src="./img/facebook.svg" alt=""></a>
-                    <a href="#"><img class="right" src="./img/twitter.svg" alt=""></a>
-                    <a href="#"><img class="right" src="./img/instagram.svg" alt=""></a>
+                <div style="display: none;" class="svg__wrapper">
+                    <svg>
+                        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="facebook">
+                            <path
+                                d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z">
+                            </path>
+                        </symbol>
+                    </svg>
+                    <svg>
+                        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20" id="twitter">
+                            <path
+                                d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z">
+                            </path>
+                        </symbol>
+                    </svg>
+                    <svg>
+                        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="instagram">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z">
+                            </path>
+                        </symbol>
+                    </svg>
+                </div>
+                <div class="footer__img">
+                    <a class="footer__img_link" href="#">
+                        <svg class="icon">
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                    </a>
+                    <a class="footer__img_link" href="#">
+                        <svg class="twitter">
+                            <use xlink:href="#twitter"></use>
+                        </svg>
+                    </a>
+                    <a class="footer__img_link" href="#">
+                        <svg class="instagram">
+                            <use xlink:href="#instagram"></use>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>

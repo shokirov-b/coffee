@@ -1,0 +1,32 @@
+.commit{
+    &__wrapper{
+        display: flex;
+        width: 1110px;
+        margin: 0 auto;
+    }
+    &__img{
+        width: 445px;
+        height: 520px;
+        border-radius: 8px;
+    }
+    &__title{
+        font-family: 'Fraunces';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 48px;
+        color: #333D4B;
+        margin: 90px 0 32px 0;
+    }
+    &__text{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        color: #333D4B;
+        opacity: 0.8;
+    }
+    &__right{
+        margin-left: 125px;
+    }
+}

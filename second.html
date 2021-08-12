@@ -8,41 +8,59 @@
     <title>About us</title>
     <link rel="stylesheet" href="./css/stylesheet.css">
     <link rel="stylesheet" href="./css/second.css">
+    <!-- <link rel="stylesheet" href="./css/second.css"> -->
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="container">
-            <nav class="nav">
-                <a class="logotip" href="./index.html"><img class="image_coffee" src="./img/logo.svg" alt=""></a>
-                <ul class="navbar">
-                    <li class="navbar_item"><a class="navbar_link" href="./index.html">HOME</a></li>
-                    <li class="navbar_item"><a class="navbar_link" href="./second.html">ABOUT US</a></li>
-                    <li class="navbar_item"><a class="navbar_link" href="./subscribe.html">CREATE YOUR PLAN</a></li>
+            <nav class="header__nav">
+                <a class="header__logotip" href="./index.html"><img class="header__logo" src="./img/logo.svg"
+                    alt=""></a>
+                    <div class="header__svg" style="display: none">
+                        <svg>
+                            <symbol aria-hidden="true" data-prefix="fas" data-icon="bars" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" id="bars">
+                              <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
+                            </symbol>
+                          </svg>
+                    </div>
+                        <svg class="menu">
+                            <use xlink:href="#bars"></use>
+                          </svg>
+                <ul class="header__list">
+                    <li class="header__item"><a class="header__link" href="#">HOME</a></li>
+                    <li class="header__item"><a class="header__link" href="./second.html">ABOUT US</a></li>
+                    <li class="header__item"><a class="header__link" href="./subscribe.html">CREATE YOUR PLAN</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section class="one">
+        <section class="about">
             <div class="container">
-                <div class="wrapper_one">
-                    <h1 class="title">About Us</h1>
-                    <p class="text">Coffeeroasters began its journey of exotic discovery in 1999, <br> highlighting
-                        stories of coffee from around the world. We have <br> since been dedicated to bring the perfect
-                        cup - from bean <br> to brew - in every shipment.</p>
+                <div class="about__wrapper">
+                    <div class="about__title__wrapper">
+                        <h1 class="about__title">About Us</h1>
+                        <p class="about__text">Coffeeroasters began its journey of exotic discovery in 1999, highlighting
+                            stories of coffee from around the world. We have since been dedicated to bring the perfect
+                            cup - from bean to brew - in every shipment.</p>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="two">
+        <section class="commit">
             <div class="container">
-                <div class="main_wrapper">
-                    <div class="left_commit">
-                        <img class="coffee__master" src="./img/master.png" alt="master_coffee" width="445" height="520">
+                <div class="commit__wrapper">
+                    <div class="commit__left">
+                        <picture>
+                            <source media="(max-width: 375px)" srcset="./img/mobile_cup.png 1x, ./img/mobile_cup@2x.png 2x">
+                            <source class="man" media="(max-width: 768px)" srcset="./img/man.png">
+                            <img class="commit__img" src="./img/master.png" alt="master_coffee">
+                        </picture>
                     </div>
-                    <div class="right_commit">
-                        <h3 class="title_commit">Our commitment</h3>
-                        <p class="text_commit">We’re built on a simple mission and a commitment to doing good along the
+                    <div class="commit__right">
+                        <h3 class="commit__title">Our commitment</h3>
+                        <p class="commit__text">We’re built on a simple mission and a commitment to doing good along the
                             way. We want to make it easy for you to discover and brew the world’s best coffee at home.
                             It all starts at the source. To locate the specific lots we want to purchase, we travel
                             nearly 60 days a year trying to understand the challenges and opportunities in each of these
@@ -55,81 +73,120 @@
                 </div>
             </div>
         </section>
-        <section class="three">
+        <section class="quality">
             <div class="container">
-                <div class="quality">
-                    <div class="quality_left">
-                        <h2 class="title_quality">Uncompromising quality</h2>
-                        <p class="text_quality">Although we work with growers who pay close attention to all stages of
-                            <br> harvest and processing, we employ, on our end, a rigorous quality control <br> program
-                            to avoid over-roasting or baking the coffee dry. Every bag of coffee is <br> tagged with a
-                            roast date and batch number. Our goal is to roast consistent, <br> user-friendly coffee, so
+                <div class="quality__wrapper">
+                    <div class="quality__left">
+                        <h2 class="quality__title">Uncompromising quality</h2>
+                        <p class="quality__text">Although we work with growers who pay close attention to all stages of
+                            harvest and processing, we employ, on our end, a rigorous quality control program
+                            to avoid over-roasting or baking the coffee dry. Every bag of coffee is tagged with a
+                            roast date and batch number. Our goal is to roast consistent, user-friendly coffee, so
                             that brewing is easy and enjoyable.</p>
                     </div>
-                    <div class="quality_right">
-                        <img class="cupof" src="./img/cupofcoffee.jpg" alt="">
+                    <div class="quality__right">
+                        <picture>
+                            <source media="(max-width: 375px)" srcset="./img/quality_img.png 1x, ./img/quality_img@2x.png 2x">
+                            <source class="cupoff" media="(max-width: 768px)" srcset="./img/cupof.png 1x, ./img/cupof@2x.png 2x,">
+                            <img class="quality__img" src="./img/cupofcoffee.jpg" alt="">
+                        </picture>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="four">
+        <section class="countries">
             <div class="container">
-                <div class="country">
-                    <h3 class="title_country">Our headquarters</h3>
-                    <ul class="country_list">
-                        <li class="country_item">
-                            <img class="image_country" src="./img/united.svg" alt="united kingdom" width="41" height="49">
-                            <h3 class="tagline_united">United Kingdom</h3>
-                            <a class="text_united" href="#">68 Asfordby Rd</a>
+                <div class="countries__wrapper">
+                    <h3 class="countries__title">Our headquarters</h3>
+                    <ul class="countries__list">
+                        <li class="countries__item">
+                            <img class="countries__img-united" src="./img/united.svg" alt="united kingdom" width="41" height="49">
+                            <h3 class="countries__subtitle">United Kingdom</h3>
+                            <a class="countries__subtext" href="#">68 Asfordby Rd</a>
                             <br>
-                            <a class="text_united" href="#">Alcaston</a>
+                            <a class="countries__subtext" href="#">Alcaston</a>
                             <br>
-                            <a class="text_united" href="#">SY6 1YA</a>
+                            <a class="countries__subtext" href="#">SY6 1YA</a>
                             <br>
-                            <a class="text_united" href="#">+44 1241 918425</a>
+                            <a class="countries__subtext" href="#">+44 1241 918425</a>
                         </li>
-                        <li class="country_item">
-                            <img class="image_country" src="./img/canada.svg" alt="canada" width="41" height="49">
-                            <h3 class="tagline_united">Canada</h3>
-                            <a class="text_united" href="#">1528  Eglinton Avenue</a>
+                        <li class="countries__item">
+                            <img class="countries__img-canada" src="./img/canada.svg" alt="canada" width="41" height="49">
+                            <h3 class="countries__subtitle">Canada</h3>
+                            <a class="countries__subtext" href="#">1528  Eglinton Avenue</a>
                             <br>
-                            <a class="text_united" href="#"> Toronto</a>
+                            <a class="countries__subtext" href="#"> Toronto</a>
                             <br>
-                            <a class="text_united" href="#"> Ontario M4P 1A6</a>
+                            <a class="countries__subtext" href="#"> Ontario M4P 1A6</a>
                             <br>
-                            <a class="text_united" href="#">+1 416 485 2997</a>
+                            <a class="countries__subtext" href="#">+1 416 485 2997</a>
                         </li>
-                        <li class="country_item">
-                            <img class="image_country" src="./img/australia.svg" alt="australia" width="41" height="49">
-                            <h3 class="tagline_united">Australia</h3>
-                            <a class="text_united" href="#">36 Swanston Street</a>
+                        <li class="countries__item">
+                            <img class="countries__img-aus" src="./img/australia.svg" alt="australia" width="41" height="49">
+                            <h3 class="countries__subtitle">Australia</h3>
+                            <a class="countries__subtext" href="#">36 Swanston Street</a>
                             <br>
-                            <a class="text_united" href="#">Kewell</a>
+                            <a class="countries__subtext" href="#">Kewell</a>
                             <br>
-                            <a class="text_united" href="#">Victoria</a>
+                            <a class="countries__subtext" href="#">Victoria</a>
                             <br>
-                            <a class="text_united" href="#">+61 4 9928 3629</a>
+                            <a class="countries__subtext" href="#">+61 4 9928 3629</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <div class="footer_wrapper">
-                <a class="logo_footer" href="#"><img class="logo" src="./img/footerlogo.svg" alt=""></a>
+            <div class="footer__wrapper">
+                <a class="footer__logo" href="#"><img class="logo" src="./img/footerlogo.svg" alt="footer logo" width="236" height="26"></a>
                 <nav>
-                    <ul class="footer_nav">
-                        <li class="footer_item"><a class="footer_link" href="#">HOME</a></li>
-                        <li class="footer_item"><a class="footer_link" href="#">ABOUT US</a></li>
-                        <li class="footer_item"><a class="footer_link" href="#">CREATE YOUR PLAN</a></li>
+                    <ul class="footer__menu">
+                        <li class="footer__item"><a class="footer__link" href="#">HOME</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">ABOUT US</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">CREATE YOUR PLAN</a></li>
                     </ul>
                 </nav>
-                <div class="images">
-                    <a href="#"><img class="right" src="./img/facebook.svg" alt=""></a>
-                    <a href="#"><img class="right" src="./img/twitter.svg" alt=""></a>
-                    <a href="#"><img class="right" src="./img/instagram.svg" alt=""></a>
+                <div style="display: none;" class="svg__wrapper">
+                    <svg>
+                        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="facebook">
+                            <path
+                                d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z">
+                            </path>
+                        </symbol>
+                    </svg>
+                    <svg>
+                        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20" id="twitter">
+                            <path
+                                d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z">
+                            </path>
+                        </symbol>
+                    </svg>
+                    <svg>
+                        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="instagram">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z">
+                            </path>
+                        </symbol>
+                    </svg>
+                </div>
+                <div class="footer__img">
+                    <a class="footer__img_link" href="#">
+                        <svg class="icon">
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                    </a>
+                    <a class="footer__img_link" href="#">
+                        <svg class="twitter">
+                            <use xlink:href="#twitter"></use>
+                        </svg>
+                    </a>
+                    <a class="footer__img_link" href="#">
+                        <svg class="instagram">
+                            <use xlink:href="#instagram"></use>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>

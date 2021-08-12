@@ -1,0 +1,32 @@
+.header{
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 44px;
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+    }
+    &__item{
+        margin-right: 33px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &__link{
+        text-decoration: none;
+        font-style: normal;
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: bold;
+        color: #83888F;
+    }
+    &__link:hover{
+        color: #333D4B;
+    }
+}
+.menu{
+    display: none;
+}

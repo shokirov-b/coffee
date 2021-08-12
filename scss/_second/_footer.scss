@@ -1,0 +1,71 @@
+.footer{
+    
+&__wrapper{
+    display: flex;
+    align-items: center;
+    height: 120px;
+    background-color: #2C343E;
+    position: relative;
+    margin-top: 200px;
+}
+&__logo{
+    margin: 48px 108px 47px 85px;
+}
+&__menu{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+&__link{
+    color: #83888F;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    margin-right: 33px;
+    &:hover{
+        color: #FEFCF7;
+    }
+}
+&__img{
+    position: absolute;
+    right: 86px;
+}
+&__img_link{
+    margin-right: 24px;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+&__img_right{
+    margin-right: 24px;
+    &:nth-child(3){
+        margin-right: 0;
+    }
+}
+  .icon{
+      width: 24px;
+      height: 24px;
+      fill: #FEFCF7;
+      &:hover{
+          fill:  #FDD6BA;
+      }
+  }
+  .twitter{
+      width: 24px;
+      height: 19.5px;
+      fill: #FEFCF7;
+      &:hover{
+        fill:  #FDD6BA;
+    }
+  }
+  .instagram{
+      width: 24px;
+      height: 24px;
+      fill: #FEFCF7;
+      &:hover{
+        fill:  #FDD6BA;
+    }
+  }
+}

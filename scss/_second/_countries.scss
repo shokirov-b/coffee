@@ -1,0 +1,50 @@
+.countries{
+    &__wrapper{
+       width: 1045px;
+       margin: 0 auto;
+    }
+    &__title{
+        font-family: 'Fraunces';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        color: #83888F;
+        margin: 168px 0 72px 0;
+    }
+    &__subtitle{
+        font-style: normal;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 36px;
+        color: #333D4B;
+        margin-bottom: 24px;
+    }
+    &__subtext{
+        width: 285px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 35px;
+        color: #333D4B;
+    }
+    &__list{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        margin-right: 108px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &__img-united{
+        margin-bottom: 46px;
+    }
+    &__img-canada{
+        margin-bottom: 45px;
+    }
+    &__img-aus{
+        margin-bottom: 48px;
+    }
+}

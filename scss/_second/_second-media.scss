@@ -1,0 +1,281 @@
+@media only screen and (max-width: 375px){
+    .container{
+        margin: 0 auto;
+        width: 327px;
+        max-width: 100%;
+        padding: 0px;
+    }
+    .menu{
+        display: block;
+        width: 16px;
+        height: 15px;
+        fill: #000;
+    }
+    .header__nav{
+        margin-top: 32px;
+    }
+    .header__list{
+        display: none;
+    }
+    .about{
+        &__wrapper{
+            background-image: url(../img/about.jpg);
+            background-position: center top ;
+            height: 400px;
+            margin: 41px 0 120px 0;
+            border-radius: 10px;
+        }
+        &__title__wrapper{
+            padding: 118px 0 118px 24px;
+        }
+        &__title{
+            width: 279px;
+            font-family: 'Fraunces';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 28px;
+            line-height: 28px;
+            color: #FEFCF7;
+            text-align: center;
+        }
+        &__text{
+            width: 279px;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 15px;
+            line-height: 25px;
+            color: #FEFCF7;
+            margin-top: 24px;
+            text-align: center;
+        }
+    }
+    .commit{
+        &__wrapper{
+            display: flex;
+            flex-direction: column;
+            width: 327px;
+            margin: 0 auto;
+        }
+        &__img{
+            width: 327px;
+            height: 400px;
+            border-radius: 8px;
+        }
+        &__title{
+            width: 327px;
+            font-family: 'Fraunces';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 32px;
+            line-height: 48px;
+            color: #333D4B;
+            margin:0;
+            text-align: center;
+        }
+        &__right{
+            width: 327px;
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+        .commit__left{
+            width: 327;
+        }
+    }
+    .commit__text{
+        width: 327px;
+        height: 375px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+        color: #333D4B;
+        opacity: 0.8;
+        text-align: center;
+    }
+    .man{
+        width: 281px;
+        height: 470px;
+    }
+    .quality{
+        margin-top: 180px;
+        &__wrapper{
+            width: 327px;
+            height: 509px;
+            display: flex;
+            background: #2C343E;
+            border-radius: 10px;
+            position: relative;
+            padding: 142px 0 61px 24px;
+        }
+        &__left{
+            width: 327px;
+        }
+        &__title{
+            width: 279px;
+            font-family: 'Fraunces';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 28px;
+            line-height: 28px;
+            color: #FEFCF7;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        &__text{
+            width: 279px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 25px;
+            color: #FEFCF7;
+            opacity: 0.8;
+            text-align: center;
+        }
+        &__img{
+            width: 279px;
+            height: 156px;
+            position: absolute;
+            border-radius: 10px;
+            right: 24px;
+            top: -70px;
+            // bottom: 88px;
+        }
+    }
+    .countries{
+        &__wrapper{
+           width: 327px;
+           margin: 0 auto;
+        }
+        &__title{
+            width: 327px;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 32px;
+            color: #83888F;
+            margin: 100px 0 72px 0;
+            text-align: center;
+        }
+        &__subtitle{
+            font-style: normal;
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 36px;
+            color: #333D4B;
+            margin-bottom: 24px;
+        }
+        &__subtext{
+            width: 327px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 30px;
+            color: #333D4B;
+            text-align: center;
+        }
+        &__list{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        &__item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 0px;
+            margin-bottom: 80px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+        &__img-united{
+            margin-bottom: 46px;
+        }
+        &__img-canada{
+            margin-bottom: 45px;
+        }
+        &__img-aus{
+            margin-bottom: 48px;
+        }
+    }
+    .footer{
+        &__wrapper{
+            width: 327px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 346px;
+            background-color: #2C343E;
+            position: relative;
+            margin-top: 200px;
+        }
+        &__logo{
+            width: 218px;
+            height: 24px;
+            text-align: center;
+        }
+        &__menu{
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__item{
+            margin-bottom: 24px;
+        }
+        &__link{
+            color: #83888F;
+            text-decoration: none;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 15px;
+            margin-right: 0px;
+            &:hover{
+                color: #FEFCF7;
+            }
+        }
+        &__img{
+           
+            position: absolute;
+            right: 103px;
+            bottom: 54px;
+        }
+        &__img_link{
+            margin-right: 24px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+        &__img_right{
+            margin-right: 24px;
+            &:nth-child(3){
+                margin-right: 0;
+            }
+        }
+          .icon{
+              width: 24px;
+              height: 24px;
+              fill: #FEFCF7;
+              &:hover{
+                  fill:  #FDD6BA;
+              }
+          }
+          .twitter{
+              width: 24px;
+              height: 19.5px;
+              fill: #FEFCF7;
+              &:hover{
+                fill:  #FDD6BA;
+            }
+          }
+          .instagram{
+              width: 24px;
+              height: 24px;
+              fill: #FEFCF7;
+              &:hover{
+                fill:  #FDD6BA;
+            }
+          }
+        }
+}
