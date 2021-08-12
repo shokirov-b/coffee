@@ -76,6 +76,17 @@ a {
   display: none;
 }
 
+.checkbox {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .great {
   margin-top: 45px;
   margin-bottom: 165px;
